@@ -3,9 +3,7 @@ package auth
 import (
 	"log"
 	"testing"
-	// "fmt"
 )
-
 
 func TestGetAPIKey(t *testing.T) {
 	headers := make(map[string][]string)
