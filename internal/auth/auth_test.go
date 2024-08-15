@@ -9,7 +9,7 @@ import (
 
 func TestGetAPIKey(t *testing.T) {
 	headers := make(map[string][]string)
-	headers["Authorization"] = []string{"ApiKey"}
+	headers["Authorization"] = []string{"ApiKey asdlfjo814018"}
 
 	got, err := GetAPIKey(headers)
 	if err != nil {
