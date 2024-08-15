@@ -3,6 +3,7 @@ package main
 import (
 	"database/sql"
 	"embed"
+	"fmt"
 	"io"
 	"log"
 	"net/http"
@@ -97,8 +98,6 @@ func main() {
 	log.Fatal(srv.ListenAndServe())
 }
 
-
 func unused() {
-    // this function does nothing
-    // and is called nowhere
+	fmt.Println("valid")
 }
