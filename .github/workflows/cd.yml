@@ -36,3 +36,6 @@ jobs:
 
       - name: Build and push Docker image
         run: gcloud builds submit --tag us-central1-docker.pkg.dev/top-decoder-432709-t3/notely-ar-repo/ds1242/notely:latest
+      
+      - name: Deploy to Cloud Run
+        run: gcloud run deploy notely --image us-central1-docker.pkg.dev/top-decoder-432709-t3/notely-ar-repo/ds1242/notely:latest --region us-central1 --allow-unauthenticated --project notely --max-instances=4
